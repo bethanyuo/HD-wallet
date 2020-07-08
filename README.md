@@ -36,7 +36,7 @@ Create a random HD wallet using `ethers.Wallet.createRandom`.
 ## Save HD Wallet as JSON
 Encrypt and save given HD node to a JSON document by password. To save the HD Wallet in an encrypted JSON format, you need the Wallet to include the mnemonic phrase. The mnemonic is encrypted in the `x-ethers` part of the json. 
 
-### Load HD Wallet as JSON
+## Load HD Wallet as JSON
 Decrypt and load an HD node from a JSON document using a password. Use `ethers.Wallet.fromEncryptedJson(json, password)`.
 
 ## Derive Keys from HD Wallet
