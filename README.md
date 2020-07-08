@@ -1,7 +1,7 @@
 # Ethereum HD Wallet
 A Hierarchical Deterministic Wallet represents a large tree of private keys, which can be reproduced from an initial seed. Each node in the tree is represented by an HDNode which can be branched. 
 
-This is an implementation of a hierarchical wallet (HD wallet) for Ethereum in JavaScript using the Ethers.js library. The wallet will hold a BIP39 mnemonic phrase and will allow deriving private keys and addresses from it. The concept of hierarchical wallets (HD Wallets) is based on BIP39 and BIP44 specs. The HDNode class in the Ethers.js library holds a seed key + the ability to derive private keys by a certain derivation path.
+This is an implementation of a hierarchical wallet (HD wallet) for Ethereum in JavaScript using the Ethers.js library. The wallet will hold a BIP39 mnemonic phrase and will allow deriving private keys and addresses from it. The concept of hierarchical wallets (HD Wallets) is based on BIP39 and BIP44 specs. The HDNode class in the [ethers.js](https://github.com/ethers-io/ethers.js) library holds a seed key + the ability to derive private keys by a certain derivation path.
 
 ## Installation
 * Initialize a package.json 
