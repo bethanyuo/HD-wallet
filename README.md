@@ -43,7 +43,7 @@ Decrypt and load an HD node from a JSON document using a password. Use `ethers.W
 Derive keys (and their associated addresses) from HD Wallet by given derivation path. Derivation path is `m/44'/60'/0'/0`.
 
 ## Sign a Transaction
-Take the second of the derived wallets and sign a transaction with a given recipient address and ether value.
+Take the second of the derived wallets (wallets[1]) and sign a transaction with a given recipient address and ether value.
 * Ethereum Recipient Address
 ```
 0x933b946c4fec43372c5580096408d25b3c7936c5 
