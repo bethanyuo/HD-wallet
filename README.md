@@ -17,21 +17,18 @@ Play a bit with the BIP39 online implementation here: [iancoleman](https://ianco
 
 ## Restore HD Wallet from Existing Mnemonic
 
-Restore an HD node by given existing mnemonic words:
+1. Restore an HD node by given existing mnemonic words:
 ```
 upset fuel enhance depart portion hope core animal innocent will athlete snack
 ```
-To create an HD node from a mnemonic, use `ethers.utils.HDNode.fromMnemonic`. The HD node stores a key pair (publicKeyBytes has been truncated)
+To create an HD node from a mnemonic, use `ethers.utils.HDNode.fromMnemonic`. The HD node stores a key pair (publicKeyBytes has been truncated).
 
-### Restore HD Wallet from Existing Mnemonic cont.
-
-When an ethers.Wallet instance is created from a mnemonic, it actually uses `HDNode.fromMnemonic`, derives once, and from the new HD node, it takes the private key to build the wallet.
+2. When an ethers.Wallet instance is created from a mnemonic, it actually uses `HDNode.fromMnemonic`, derives once, and from the new HD node, it takes the private key to build the wallet.
 
 ## Generate a New Random HD Wallet from Random Mnemonic
-Generate a new random HD node (generate random mnemonics). To create a random HD node, you can either do `ethers.Wallet.createRandom` and build the HD node from the mnemonic, or you can build the mnemonic from 16 bytes of entropy using `ethers.utils.HDNode.entropyToMnemonic`.
+1. Generate a new random HD node (generate random mnemonics). To create a random HD node, you can either do `ethers.Wallet.createRandom` and build the HD node from the mnemonic, or you can build the mnemonic from 16 bytes of entropy using `ethers.utils.HDNode.entropyToMnemonic`.
 
-### Generate a New Random HD Wallet from Random Mnemonic cont.
-Create a random HD wallet using `ethers.Wallet.createRandom`.
+2. Create a random HD wallet using `ethers.Wallet.createRandom`.
 
 ## Save HD Wallet as JSON
 Encrypt and save given HD node to a JSON document by password. To save the HD Wallet in an encrypted JSON format, you need the Wallet to include the mnemonic phrase. The mnemonic is encrypted in the `x-ethers` part of the json. 
